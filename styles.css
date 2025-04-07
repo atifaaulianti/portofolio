@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f9f9ff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  color: #25255b;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 5%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  width: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 500;
+  position: relative;
+}
+
+nav a.active,
+nav a:hover {
+  color: #5E4AE3;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #5E4AE3;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3b2aa7;
+}
+
+/* Portfolio */
+.portfolio-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 1;
+  min-width: 500px;
+}
+
+.portfolio-text {
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+.portfolio-text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  color: #000;
+}
+
+.tag {
+  background-color: #A0C4FF;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50px;
+  font-size: 8px;
+  display: inline-block;
+}
+
+.portfolio-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 230px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Blog */
+.blog {
+  padding: 60px 10%;
+  background-color: #f8f8ff;
+}
+
+.blog h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.blog h2 span {
+  color: #5E4AE3;
+}
+
+.blog-card {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-items: center;
+  gap: 30px;
+}
+
+.blog-card img {
+  width: 300px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.blog-content small {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #888;
+  display: block;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.blog-content .btn {
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+/* Footer */
+footer {
+  background: #2D2F5C;
+  color: white;
+  padding: 50px 10%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.footer-links a, .footer-info p {
+  display: block;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #aaa;
+}
+
+.footer-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icons */
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-instagram, .footer-linkedin {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Location, Phone & Email Icons */
+.footer-info p::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+}
+
+.footer-info p:nth-child(2)::before {
+  background-image: url('img/location-icon.png');
+}
+
+.footer-info p:nth-child(3)::before {
+  background-image: url('img/phone-icon.png');
+}
+
+.footer-info p:nth-child(4)::before {
+  background-image: url('img/email-icon.png');
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .portfolio-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

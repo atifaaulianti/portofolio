@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atifa Aulianti Fani - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atifa Aulianti Fani - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="img/logoheader.png" alt="Logo Atifa" class="logo"> 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Halo!<br>I'm Atifa Aulianti Fani</h1>
-            <p>This is my personal website to share my experience, portfolio, and educational blog.</p>
-            <a href="#portfolio" class="btn">Explore Portfolio</a>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <img src="img/logoheader.png" alt="Logo Atifa Aulianti Fani" class="logo" />
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Halo!<br />I'm Atifa Aulianti Fani</h1>
+      <p>This is my personal website to share my experience, portfolio, and educational blog.</p>
+      <a href="#portfolio" class="btn">Explore Portfolio</a>
+    </div>
+    <div class="hero-image">
+      <img src="img/atifa.png" alt="Foto Atifa Aulianti Fani" width="190" height="310" />
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-content">
+      <div class="portfolio-items">
+        <div class="portfolio-card">
+          <img src="img/productcard.png" alt="Desain Kartu Produk" />
+          <span class="tag">UI/UX Design</span>
+          <h3 class="card-title">Product Card</h3>
         </div>
-        <div class="hero-image">
-            <img src="img/atifa.png" alt="Atifa Aulianti Fani" width="142" height="230">
+        <div class="portfolio-card">
+          <img src="img/getf.png" alt="Tampilan Aplikasi Mobile Get-F" />
+          <span class="tag">UI/UX Design</span>
+          <h3 class="card-title">Get-F - Mobile App</h3>
         </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-        <h2>This is <span>My portfolio preview</span></h2>
-        <div class="portfolio-items">
-            <div class="portfolio-card">
-                <img src="img/productcard.png" alt="Product Card" width="142" height="142">
-                <br>
-                <button>UI/UX Design</button>
-                <p>Product Card</p>
-            </div>
-            <div class="portfolio-card">
-                <img src="img/getf.png" alt="Get-F Mobile App" width="142" height="142">
-                <br>
-                <button>UI/UX Design</button>
-                <p>Get-F - Mobile App</p>
-            </div>
-            <div class="portfolio-card">
-                <img src="img/bundokanduang.png" alt="Bundo Kanduang Infographic" width="142" height="142">
-                <br>
-                <button>Infographic</button>
-                <p>Bundo Kanduang - Infographic</p>
-            </div>
-            <div class="portfolio-card">
-                <img src="img/kerpis.png" alt="Kerpis Togethop Packaging Design" width="142" height="142">
-                <br>
-                <button>Branding</button>
-                <p>Kerpis Togethop - Packaging Design</p>
-            </div>
+        <div class="portfolio-card">
+          <img src="img/bundokanduang.png" alt="Infografis Bundo Kanduang" />
+          <span class="tag">Infographic</span>
+          <h3 class="card-title">Bundo Kanduang - Infographic</h3>
         </div>
+        <div class="portfolio-card">
+          <img src="img/kerpis.png" alt="Desain Kemasan Kerpis Togethop" />
+          <span class="tag">Branding</span>
+          <h3 class="card-title">Kerpis Togethop - Packaging Design</h3>
+        </div>
+      </div>
+      <div class="portfolio-text">
+        <h2>This is<br /><span>My portfolio preview</span></h2>
         <a href="#" class="btn">Show More</a>
-    </section>
-    <section class="blog">
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog">
+    <div class="blog-card">
+      <div class="blog-image-wrapper">
         <h2>Recent <span>Articles</span></h2>
-        <div class="blog-card">
-            <img src="img/book.png" alt="Rekomendasi Buku" width="230" height="142">
-            <div class="blog-content">
-                <h3>Rekomendasi Buku yang Wajib Dibaca</h3>
-                <p>08 Maret 2025</p>
-                <p>Membaca buku adalah salah satu cara terbaik untuk menambah wawasan, meningkatkan kreativitas, dan mendapatkan inspirasi...</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-content">
+        <img src="img/book.png" alt="Gambar Buku Rekomendasi" />
+      </div>
+      <div class="blog-content">
+        <h3>Rekomendasi Buku yang Wajib Dibaca</h3>
+        <small>📅 06 Maret 2025</small>
+        <p>
+          Membaca buku adalah salah satu cara terbaik untuk menambah wawasan, meningkatkan kreativitas, dan mendapatkan inspirasi...
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
 
-            <img src="img/logofooter.png" alt="Logo Atifa" class="footer-logo"> <br>
-            <img src="img/footerig.png" alt="Icon Instagram" class="footer-instagram">
-            <img src="img/footerlinkedin.png" alt="Icon Linkedin" class="footer-linkedin">
-
-            <div class="footer-links">
-                <p>Page</p>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Service</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="footer-info">
-                <p>Information</p>
-                <p>Takalar, Sulawesi Selatan</p>
-                <p>+62 852 3068 6891</p>
-                <p>atifaauliantifani@gmail.com</p>
-            </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <img src="img/logofooter.png" alt="Logo Footer Atifa Aulianti Fani" class="footer-logo"> 
+        <div class="footer-icons">
+          <img src="img/footerig.png" alt="Instagram Icon" class="footer-instagram">
+          <img src="img/footerlinkedin.png" alt="LinkedIn Icon" class="footer-linkedin">
         </div>
-        <p class="copyright">&copy; 2025 Atifa Aulianti Fani</p>
-    </footer>
+      </div>
+      <div class="footer-links">
+        <p>Pages</p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-info">
+        <p>Information</p>
+        <p>Takalar, Sulawesi Selatan</p>
+        <p>+62 852 3068 6891</p>
+        <p>atifaauliantifani@gmail.com</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Atifa Aulianti Fani</p>
+  </footer>
+  
 </body>
 </html>
