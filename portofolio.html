@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atifa Aulianti Fani - Portofolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <img src="img/logoheader.png" alt="Logo Atifa Aulianti Fani" class="logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portofolio.html" class="active">Portofolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="portofolio">
+    <div class="portofolio-header">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="purple-text">This is</span><br>
+          <span class="dark-text">My portofolio</span>
+        </h2>
+  
+        <div class="portofolio-filter">
+          <!-- Filter + dropdown -->
+          <div class="filter-container">
+            <button class="btn-filter">
+              <i class="fas fa-sliders-h"></i> Filter
+            </button>
+            <div class="filter-dropdown">
+              <button class="dropdown-item" data-filter="all">All</button>
+              <button class="dropdown-item" data-filter="UI/UX Design">UI/UX Design</button>
+              <button class="dropdown-item" data-filter="Infographic">Infographic</button>
+              <button class="dropdown-item" data-filter="Branding">Branding</button>
+              <button class="dropdown-item" data-filter="Poster">Poster</button>
+              <button class="dropdown-item" data-filter="Social Media">Social Media</button>
+            </div>
+          </div>
+        
+          <!-- Pencarian -->
+          <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Cari...">
+          </div>
+        </div>
+                
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="portofolio-gallery">
+        <div class="portofolio-item" data-tag="UI/UX Design">
+          <img src="img/productcard.png" alt="Product Card">
+          <div class="tag-container">
+            <span class="tag">UI/UX Design</span>
+          </div>
+          <p>Product Card</p>
+        </div>
+        
+        <div class="portofolio-item" data-tag="UI/UX Design">
+          <img src="img/getf.png" alt="Get F - Mobile App">
+          <div class="tag-container">
+            <span class="tag">UI/UX Design</span>
+          </div>
+          <p>Get F - Mobile App</p>
+        </div>
+      
+        <div class="portofolio-item" data-tag="Infographic">
+          <img src="img/bundokanduang.png" alt="Bundo Kanduang - Infographic">
+          <div class="tag-container">
+            <span class="tag">Infographic</span>
+          </div>
+          <p>Bundo Kanduang - Infographic</p>
+        </div>
+      
+        <div class="portofolio-item" data-tag="Infographic">
+          <img src="img/pkm.png" alt="Workshop Gema PKM 2025">
+          <div class="tag-container">
+            <span class="tag">Infographic</span>
+          </div>
+          <p>Workshop Gema PKM 2025</p>
+        </div>
+      
+        <div class="portofolio-item" data-tag="Branding">
+          <img src="img/kerpis.png" alt="Kerpis Together - Packaging Design">
+          <div class="tag-container">
+            <span class="tag">Branding</span>
+          </div>
+          <p>Kerpis Together - Packaging Design</p>
+        </div>
+      
+        <div class="portofolio-item"data-tag="Branding">
+          <img src="img/bawanggoreng.png" alt="Packaging Design">
+          <div class="tag-container">
+            <span class="tag">Branding</span>
+          </div>
+          <p>Packaging Design</p>
+        </div>
+      
+        <div class="portofolio-item" data-tag="Poster,Social Media">
+          <img src="img/ekofun.png" alt="Eko Fun">
+          <div class="tag-container">
+            <span class="tag">Poster</span>
+          <span class="tag">Social Media</span>
+          </div>
+          <p>Eko Fun</p>
+        </div>
+      
+        <div class="portofolio-item" data-tag="Poster,Social Media">
+          <img src="img/isramiraj.png" alt="Isra Mi'raj Poster">
+          <div class="tag-container">
+            <span class="tag">Poster</span>
+          <span class="tag">Social Media</span>
+          </div>
+          <p>Isra Miraj Poster</p>
+        </div>
+      </div>
+
+      <p class="no-result-message" style="display: none; text-align: center; margin-top: 2rem; color: #999;">
+        Oops! Kami tidak menemukan item yang cocok.
+      </p>
+  
+      <div class="show-more">
+        <button>Show More</button>
+      </div>    
+      
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <img src="img/logofooter.png" alt="Logo Footer Atifa Aulianti Fani" class="footer-logo"> 
+        <div class="footer-icons">
+          <img src="img/footerig.png" alt="Instagram Icon" class="footer-instagram">
+          <img src="img/footerlinkedin.png" alt="LinkedIn Icon" class="footer-linkedin">
+        </div>
+      </div>
+      <div class="footer-links">
+        <p>Pages</p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-info">
+        <p>Information</p>
+        <p>Takalar, Sulawesi Selatan</p>
+        <p>+62 852 3068 6891</p>
+        <p>atifaauliantifani@gmail.com</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Atifa Aulianti Fani</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterButtons = document.querySelectorAll('.dropdown-item');
+      const portfolioItems = document.querySelectorAll('.portofolio-item');
+      const searchInput = document.querySelector('.search-input');
+      const noResultMessage = document.querySelector('.no-result-message');
+  
+      // FILTER KATEGORI
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filterValue = button.getAttribute('data-filter');
+          let matchCount = 0;
+  
+          portfolioItems.forEach(item => {
+            const itemTags = item.getAttribute('data-tag').split(',').map(tag => tag.trim());
+  
+            if (filterValue === 'all' || itemTags.includes(filterValue)) {
+              item.style.display = 'block';
+              matchCount++;
+            } else {
+              item.style.display = 'none';
+            }
+          });
+  
+          // Tampilkan atau sembunyikan pesan tidak ada hasil
+          noResultMessage.style.display = matchCount === 0 ? 'block' : 'none';
+  
+          // Clear search input ketika filter diklik
+          searchInput.value = '';
+        });
+      });
+  
+      // PENCARIAN JUDUL
+      searchInput.addEventListener('input', () => {
+        const searchValue = searchInput.value.toLowerCase();
+        let matchCount = 0;
+  
+        portfolioItems.forEach(item => {
+          const title = item.querySelector('p').textContent.toLowerCase();
+  
+          if (title.includes(searchValue)) {
+            item.style.display = 'block';
+            matchCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+  
+        // Tampilkan atau sembunyikan pesan tidak ada hasil
+        noResultMessage.style.display = matchCount === 0 ? 'block' : 'none';
+
+        // SEMBUNYIKAN tombol Show More jika tidak ada hasil
+  const showMoreContainer = document.querySelector('.show-more-container');
+  showMoreContainer.style.display = matchCount === 0 ? 'none' : 'block';
+      });
+    });
+  </script>
+  
+    
+  
+</body>
+</html>
