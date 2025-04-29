@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atifa Aulianti Fani - Blog</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Atifa Aulianti Fani</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <nav>
-      <img src="img/logoheader.png" alt="Logo Atifa Aulianti Fani" class="logo" />
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="service.html">Service</a></li>
-        <li><a href="portofolio.html">Portofolio</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
+ 
+   <!-- Header -->
+   <header>
+     <nav>
+       <img src="img/logoheader.png" alt="Logo Atifa Aulianti Fani" class="logo" />
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="service.html">Service</a></li>
+         <li><a href="portofolio.html">Portofolio</a></li>
+         <li><a href="blog.html" class="active">Blog</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+ 
   <!-- Title -->
-  <section class="blog-title">
-    <h1>Blog</h1>
-    <div class="search-box">
-      <i class="fas fa-search"></i>
-      <input type="text" placeholder="Cari..." class="search-input" />
+<section class="blog-title">
+  <h1 class="animate__animated animate__fadeInDown">Blog</h1>
+  <div class="search-box animate__animated animate__fadeInUp animate__delay-1s">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Cari..." class="search-input" />
+  </div>
+</section>
+
+<!-- Blog Content -->
+<section class="blog-section">
+  <p class="no-result-message animate__animated animate__bounceIn" style="display: none; text-align: center; margin-top: 2rem; color: #999;">
+    Oops! Kami tidak menemukan item yang cocok.
+  </p>
+
+  <div class="blog-card blog-item animate__animated animate__zoomIn">
+    <img src="img/book.png" alt="buku" />
+    <div class="blog-info">
+      <h2>Rekomendasi Buku yang Wajib Dibaca</h2>
+      <span class="date"><i class="fas fa-calendar-alt"></i> 08 Maret 2025</span>
+      <p>Membaca buku adalah salah satu cara terbaik untuk menambah wawasan...</p>
+      <a href="#" class="btn btn-small">Read More</a>
+    </div> 
+  </div>
+
+  <!-- Post Title -->
+  <h2 class="post-section-title post-heading animate__animated animate__fadeInUp">Post</h2>
+
+  <!-- More Posts -->
+  <div class="blog-card blog-item animate__animated animate__zoomIn">
+    <img src="img/bloggrowthmindset.png" alt="growth mindset"/>
+    <div class="blog-info">
+      <h2>Pentingnya Mengembangkan Growth Mindset</h2>
+      <span class="date"><i class="fas fa-calendar-alt"></i> 08 Maret 2025</span>
+      <p>Dalam perjalanan pengembangan diri, memiliki growth mindset adalah kunci utama...</p>
+      <a href="#" class="btn btn-small">Read More</a>
     </div>
-  </section>
+  </div>
 
-  <!-- Blog Content -->
-  <section class="blog-section">
-    <p class="no-result-message" style="display: none; text-align: center; margin-top: 2rem; color: #999;">
-        Oops! Kami tidak menemukan item yang cocok.
-      </p>
-      
-    <div class="blog-card blog-item">
-      <img src="img/book.png" alt="buku" />
-      <div class="blog-info">
-        <h2>Rekomendasi Buku yang Wajib Dibaca</h2>
-        <span class="date"><i class="fas fa-calendar-alt"></i> 08 Maret 2025</span>
-        <p>Membaca buku adalah salah satu cara terbaik untuk menambah wawasan, meningkatkan kreativitas, dan mendapatkan inspirasi...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div> 
+  <div class="blog-card blog-item animate__animated animate__zoomIn">
+    <img src="img/blogbmc.png" alt="BMC" />
+    <div class="blog-info">
+      <h2>Penggunaan Business Model Canvas (BMC) untuk Bisnis</h2>
+      <span class="date"><i class="fas fa-calendar-alt"></i> 08 Maret 2025</span>
+      <p>Business Model Canvas (BMC) adalah alat strategis untuk merancang bisnis secara visual...</p>
+      <a href="#" class="btn btn-small">Read More</a>
     </div>
-   
+  </div>
 
-    <!-- Post Title -->
-    <h2 class="post-section-title post-heading">Post</h2>
-
-
-    <!-- More Posts -->
-    <div class="blog-card blog-item">
-      <img src="img/bloggrowthmindset.png" alt="growth mindset"/>
-      <div class="blog-info">
-        <h2>Pentingnya Mengembangkan Growth Mindset</h2>
-        <span class="date"><i class="fas fa-calendar-alt"></i> 08 Maret 2025</span>
-        <p>Dalam perjalanan pengembangan diri, memiliki growth mindset adalah kunci utama untuk mencapai kesuksesan...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-
-    <div class="blog-card blog-item">
-      <img src="img/blogbmc.png" alt="BMC" />
-      <div class="blog-info">
-        <h2>Penggunaan Business Model Canvas (BMC) untuk Bisnis</h2>
-        <span class="date"><i class="fas fa-calendar-alt"></i> 08 Maret 2025</span>
-        <p>Business Model Canvas (BMC) adalah alat strategis yang digunakan untuk merancang dan mengembangkan bisnis secara visual...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-
-    <!-- Show More -->
-    <div class="show-more">
-        <button>Show More</button>
-    </div>    
-  </section>
-
-  <!-- Footer -->
+  <!-- Show More -->
+  <div class="show-more animate__animated animate__fadeInUp animate__delay-2s">
+    <a href="#" class="btn">Show More</a>
+  </div>    
+</section>
+ 
+   <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div class="footer-column">
@@ -122,39 +121,37 @@
       </div>
     </div>
     <p class="copyright">&copy; 2025 Atifa Aulianti Fani</p>
-  </footer>   
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const searchInput = document.querySelector('.search-input');
-      const blogItems = document.querySelectorAll('.blog-item');
-      const noResultMessage = document.querySelector('.no-result-message');
-      const postHeading = document.querySelector('.post-heading');
-      const postShowMore = document.querySelector('.post-show-more');
-  
-      searchInput.addEventListener('input', () => {
-        const searchValue = searchInput.value.toLowerCase();
-        let hasVisibleItem = false;
-  
-        blogItems.forEach(item => {
-          const title = item.querySelector('h2').textContent.toLowerCase();
-  
-          if (title.includes(searchValue)) {
-            item.style.display = 'flex'; // Sesuaikan jika pakai 'block'
-            hasVisibleItem = true;
-          } else {
-            item.style.display = 'none';
-          }
-        });
-  
-        noResultMessage.style.display = hasVisibleItem ? 'none' : 'block';
-        postHeading.style.display = hasVisibleItem ? 'block' : 'none';
-        postShowMore.style.display = hasVisibleItem ? 'flex' : 'none';
-      });
-    });
-  </script>
-  
-  
-
-</body>
-</html>
+  </footer> 
+ 
+   <script>
+     document.addEventListener('DOMContentLoaded', function () {
+       const searchInput = document.querySelector('.search-input');
+       const blogItems = document.querySelectorAll('.blog-item');
+       const noResultMessage = document.querySelector('.no-result-message');
+       const postHeading = document.querySelector('.post-heading');
+       const postShowMore = document.querySelector('.post-show-more');
+   
+       searchInput.addEventListener('input', () => {
+         const searchValue = searchInput.value.toLowerCase();
+         let hasVisibleItem = false;
+   
+         blogItems.forEach(item => {
+           const title = item.querySelector('h2').textContent.toLowerCase();
+   
+           if (title.includes(searchValue)) {
+             item.style.display = 'flex'; 
+             hasVisibleItem = true;
+           } else {
+             item.style.display = 'none';
+           }
+         });
+   
+         noResultMessage.style.display = hasVisibleItem ? 'none' : 'block';
+         postHeading.style.display = hasVisibleItem ? 'block' : 'none';
+         postShowMore.style.display = hasVisibleItem ? 'flex' : 'none';
+       });
+     });
+   </script>
+   
+ </body>
+ </html>

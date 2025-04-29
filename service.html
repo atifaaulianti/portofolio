@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Atifa Aulianti Fani - Service</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Atifa Aulianti Fani</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
 <body>
 
   <!-- Header -->
@@ -26,52 +27,81 @@
   </header>
 
   <!-- Service -->
-  <section class="service-section">
-    <h2 class="section-title">Service</h2>
-    <div class="service-cards">
-      <div class="service-card">
-        <img src="img/service1.png" alt="UI/UX Design Icon" class="service-icon"/>
-        <h3>UI/UX Design</h3>
-        <p>Design a user-friendly, modern and functional website or application</p>
-      </div>
-      <div class="service-card">
-        <img src="img/service2.png" alt="Social Media Design Icon" class="service-icon"/>
-        <h3>Sosial Media Design</h3>
-        <p>Create attractive feed designs and visual content to increase engagement on social media.</p>
-      </div>
-      <div class="service-card">
-        <img src="img/service3.png" alt="Marketing Design Icon" class="service-icon"/>
-        <h3>Poster & Marketing Materials</h3>
-        <p>Design eye-catching and effective posters, brochures and other promotional materials.</p>
-      </div>
+<section class="service-section">
+  <h2 class="section-title animate__animated animate__fadeInDown">Service</h2>
+  <div class="service-cards">
+    <div class="service-card animate__animated animate__fadeInLeft animate__delay-1s">
+      <img src="img/service1.png" alt="UI/UX Design Icon" class="service-icon animate__animated animate__flipInY"/>
+      <h3>UI/UX Design</h3>
+      <p>Design a user-friendly, modern and functional website or application</p>
     </div>
-  </section>
-
-  <!-- Contact me -->
-  <section class="contact-me-section">
-    <p>Contact me <span>if you are interested and would like to work together!</span></p>
-    <a href="contact.html" class="btn">Contact Me</a>
-  </section>
-
-  <!-- Testimonial -->
-  <section class="testimonial-section">
-    <div class="testimonial-title">
-      <span class="circle-bg"></span>
-      <h2>Testimonial</h2>
+    <div class="service-card animate__animated animate__fadeInUp animate__delay-2s">
+      <img src="img/service2.png" alt="Social Media Design Icon" class="service-icon animate__animated animate__flipInY animate__delay-1s"/>
+      <h3>Sosial Media Design</h3>
+      <p>Create attractive feed designs and visual content to increase engagement on social media.</p>
     </div>
-  
-    <div class="testimonial-container">
-      <button class="arrow left">&#8592;</button>
-  
-      <div class="testimonial-card">
+    <div class="service-card animate__animated animate__fadeInRight animate__delay-3s">
+      <img src="img/service3.png" alt="Marketing Design Icon" class="service-icon animate__animated animate__flipInY animate__delay-2s"/>
+      <h3>Poster & Marketing Materials</h3>
+      <p>Design eye-catching and effective posters, brochures and other promotional materials.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact me -->
+<section class="contact-me-section animate__animated animate__fadeIn">
+  <p class="animate__animated animate__lightSpeedInLeft">Contact me <span class="animate__animated animate__lightSpeedInRight">if you are interested and would like to work together!</span></p>
+  <a href="contact.html" class="btn animate__animated animate__pulse animate__infinite animate__slower">Contact Me</a>
+</section>
+
+<section class="testimonial-section">
+  <div class="testimonial-title animate__animated animate__fadeInDown">
+    <span class="circle-bg animate__animated animate__zoomIn animate__delay-1s"></span>
+    <h2 class="animate__animated animate__bounceIn animate__delay-2s">Testimonial</h2>
+  </div>
+
+  <div class="testimonial-container animate__animated animate__fadeIn animate__delay-3s">
+    <button class="arrow left animate__animated animate__fadeInLeft animate__delay-4s">&#8592;</button>
+
+    <div class="testimonial-cards">
+      <div class="testimonial-card active">
         <img src="img/nana.jpeg" alt="Foto Mustaina Sasnur" class="client-photo" />
-        <h3 class="client-name">Mustaina Sasnur</h3>
-        <p class="client-review">Saya sangat puas dengan hasil desain UI/UX dari Atifa</p>
+        <h3>Mustaina Sasnur</h3>
+        <p class="client-review animate__animated animate__fadeIn animate__delay-6s">Saya sangat puas dengan hasil desain UI/UX dari Atifa</p>
       </div>
-  
-      <button class="arrow right">&#8594;</button>
+
+      <div class="testimonial-card">
+        <img src="img/liya.jpeg" alt="Foto Auliya Rezky" class="client-photo" />
+        <h3>Auliya Rezky</h3>
+        <p class="client-review animate__animated animate__fadeIn animate__delay-6s">Desainnya bagus sekali!!</p>
+      </div>
     </div>
-  </section>
+
+    <button class="arrow right animate__animated animate__fadeInRight animate__delay-4s">&#8594;</button>
+  </div>
+</section>
+
+<script>
+  const cards = document.querySelectorAll('.testimonial-card');
+  let currentIndex = 0;
+
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.classList.toggle('active', i === index);
+    });
+  }
+
+  document.querySelector('.arrow.left').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  });
+
+  document.querySelector('.arrow.right').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  });
+</script>
+
   
   <!-- Footer -->
   <footer>
