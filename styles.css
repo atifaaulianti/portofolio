@@ -7,11 +7,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  background-color: #f9f9ff;
-  color: #333;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -21,15 +16,16 @@ h1, h2, h3 {
   color: #25255b;
 }
 
-/* BUTTON STYLES */
 .btn {
   display: inline-block;
   padding: 12px 20px;
   background: #5E4AE3;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px !important;
   font-weight: 600;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -42,8 +38,9 @@ h1, h2, h3 {
 .show-more-button,
 .show-more button,
 .contact-form button,
-.read-more {
-  transition: all 0.3s ease;
+.read-more,
+.btn-filter {
+  border-radius: 10px !important;
 }
 
 .show-more-btn:hover,
@@ -74,6 +71,7 @@ h1, h2, h3 {
 
 .btn-filter {
   transition: all 0.2s ease;
+  border-radius: 10px !important;
 }
 
 .btn-filter:hover {
@@ -122,6 +120,7 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 100px 10%;
+  background-color: #ffffff;
 }
 
 .hero-text h1 {
@@ -141,7 +140,6 @@ nav a:hover {
   height: auto;
 }
 
-/* Portofolio */
 .portfolio-card,
 .portofolio-item {
   background: white;
@@ -170,8 +168,7 @@ nav a:hover {
 }
 
 .tag-container {
-  margin-bottom: 0.75rem;
-  text-align: left;
+  margin-bottom: 0;
 }
 
 .tag {
@@ -210,6 +207,9 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   padding: 40px 10%;
+  background-color: #f6f7fb;  
+  border-radius: 0;        
+  margin: 0;            
 }
 
 .portfolio-text .btn {
@@ -217,12 +217,12 @@ nav a:hover {
 }
 
 .text-dark {
-  color: #2D2F5C; 
+  color: #2D2F5C;
   font-size: 23px;
 }
 
 .text-purple {
-  color: #5E4AE3; 
+  color: #5E4AE3;
   font-size: 26px;
 }
 
@@ -246,10 +246,10 @@ nav a:hover {
   }
 }
 
-/* Blog */
 .home-blog {
   padding: 60px 10%;
-  background-color: #f8f8ff;
+  background-color: #fdfdff;
+  margin-top: 0;    
 }
 
 .home-blog-card {
@@ -334,7 +334,7 @@ nav a:hover {
   text-decoration: none;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 .btn:hover {
@@ -345,10 +345,9 @@ nav a:hover {
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 6px;
-  margin-top: 10px; 
+  margin-top: 10px;
   display: inline-block;
 }
-
 
 /* ===== ABOUT PAGE ===== */
 .about {
@@ -377,11 +376,11 @@ nav a:hover {
 }
 
 .purple-text {
-  color: #5E4AE3; 
+  color: #5E4AE3;
 }
 
 .dark-text {
-  color: #2D2F5C; 
+  color: #2D2F5C;
 }
 
 .about-text {
@@ -394,7 +393,6 @@ nav a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Education & Skill */
 .education-skill {
   padding: 5rem 10%;
   background: #ffffff;
@@ -417,7 +415,7 @@ nav a:hover {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-  line-height: 1; 
+  line-height: 1;
   display: flex;
   align-items: center;
 }
@@ -476,7 +474,6 @@ nav a:hover {
   vertical-align: middle;
 }
 
-/* Experience */
 .experience {
   padding: 5rem 10%;
   background: #f9f9fc;
@@ -537,7 +534,7 @@ nav a:hover {
 .show-more-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 /* ===== SERVICE PAGE ===== */
@@ -591,7 +588,6 @@ nav a:hover {
   height: 50px;
 }
 
-/* Contact Me */
 .contact-me-section {
   background: #f1f1f9;
   padding: 60px 10%;
@@ -608,7 +604,6 @@ nav a:hover {
   color: #5e4ae3;
 }
 
-/* Testimonial */
 .testimonial-section {
   text-align: center;
   padding: 80px 20px;
@@ -660,7 +655,7 @@ nav a:hover {
 .testimonial-card {
   background-color: #fff;
   display: none;
-  width: 100%; 
+  width: 100%;
   padding: 40px 30px 30px;
   border-radius: 30px;
   padding-top: 70px;
@@ -720,8 +715,8 @@ nav a:hover {
 /* ===== PORTFOLIO PAGE ===== */
 .portofolio-header {
   background-color: #f6f7fb;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 5px;
+  padding-bottom: 30px;
 }
 
 .portofolio .container {
@@ -745,8 +740,8 @@ nav a:hover {
   gap: 1rem;
   align-items: center;
   margin-bottom: 2rem;
-  position: relative; 
-  z-index: 1000; 
+  position: relative;
+  z-index: 1000;
 }
 
 .filter-container {
@@ -759,7 +754,7 @@ nav a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1rem;
-  border-radius: 999px;
+  border-radius: 30px;
   border: 1px solid #ccc;
   font-size: 1rem;
   background-color: #fff;
@@ -777,7 +772,7 @@ nav a:hover {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  z-index: 1001; 
+  z-index: 1001;
   padding: 0.5rem;
   min-width: 200px;
 }
@@ -834,7 +829,6 @@ nav a:hover {
   border-color: #5E4AE3;
 }
 
-/* Portfolio gallery */
 .portofolio-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -859,6 +853,8 @@ nav a:hover {
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .portofolio-item:hover {
@@ -871,14 +867,66 @@ nav a:hover {
   display: block;
 }
 
-.portofolio-item p {
-  font-weight: 600; /* Pastikan sama dengan home page */
-  color: #2e2e2e; /* Warna sama */
-  font-size: 1rem; /* Ukuran sama */
-  text-align: left; /* Alignment sama */
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0;
   margin: 0;
-  padding: 0.5rem 1rem 1rem; /* Padding disesuaikan */
-  line-height: 1.4; /* Tambahkan line-height untuk konsistensi */
+  gap: 0.5rem;
+}
+
+.tag-container-porto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: -1rem 0 0 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: #f0f0ff;
+  color: #5E4AE3;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 600;
+  color: #2e2e2e;
+  font-size: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.show-more {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #5E4AE3;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4938b8;
+  transform: translateY(-2px);
+}
+
+.no-result-message {
+  text-align: center;
+  margin-top: 2rem;
+  color: #999;
 }
 
 /* ===== BLOG PAGE ===== */
@@ -982,6 +1030,116 @@ nav a:hover {
   font-weight: 500;
 }
 
+
+/* ===== CONTACT PAGE ===== */
+.contact-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  color: #7a42f4;
+  margin-bottom: 0.5rem;
+}
+
+.contact-hero p {
+  color: #3f3d56;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-container {
+  background-color: #f5f6fb;
+  padding: 3rem 1rem;
+}
+
+.contact-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 48%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.03);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #5E4AE3;
+}
+
+.contact-info h3 {
+  color: #6c4eff;
+  margin-top: 1rem;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  font-size: 1.3rem;
+  color: #6c4eff;
+  margin-right: 0rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3b2aa7;
+}
+
+.contact-info .icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #A0C4ff;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info .icon-circle:hover {
+  background-color: #5E4AE3;
+}
 
 /* ===== CONTACT PAGE ===== */
 .contact-hero {
