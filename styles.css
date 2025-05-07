@@ -349,6 +349,36 @@ nav a:hover {
   display: inline-block;
 }
 
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ini penting agar teks dan tombol sejajar vertikal */
+  padding: 15px 25px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.show-more-home {
+  margin: 0;
+}
+
+.show-more-home .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #6a42f4;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
 /* ===== ABOUT PAGE ===== */
 .about {
   padding: 5rem 10%;
