@@ -352,7 +352,7 @@ nav a:hover {
 .blog-header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ini penting agar teks dan tombol sejajar vertikal */
+  align-items: center; 
   padding: 15px 25px;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -375,9 +375,15 @@ nav a:hover {
   text-decoration: none;
 }
 
+.show-more-home a {
+  font-weight: 600; 
+  color: #6a42f4;     
+  text-decoration: none; 
+}
 
-
-
+.show-more-home a:hover {
+  color: #4636c5; 
+}
 
 /* ===== ABOUT PAGE ===== */
 .about {
@@ -1059,7 +1065,6 @@ nav a:hover {
   text-align: center;
   font-weight: 500;
 }
-
 
 /* ===== CONTACT PAGE ===== */
 .contact-hero {
